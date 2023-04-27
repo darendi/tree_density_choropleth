@@ -53,7 +53,7 @@
 	};
 
 	info.update = function (props) {
-		const contents = props ? `<b>${props.Name}</b><br />${props.Tree_sqkm} trees per sqkm` : 'Hover over a Subzone';
+		const contents = props ? `<b>${props.Name}</b><br />${props.SHAPE_Area} trees per sqm` : 'Hover over a Subzone';
 		this._div.innerHTML = `<h4>Singapore Population</h4>${contents}`;
 	};
 
@@ -77,7 +77,7 @@
 			opacity: 1,
 			color: 'white',
 			fillOpacity: 0.8,
-			fillColor: getColor(feature.properties.Tree_sqkm)
+			fillColor: getColor(feature.properties.SHAPE_Area)
 		};
 	}
 
